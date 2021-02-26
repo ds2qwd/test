@@ -23,11 +23,13 @@ DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
+AutoSheetNumbering=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
+IsProjectConflictPreventionWarningsEnabled=1
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -38,23 +40,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=PCB12.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JMPCJDNR
-
-[Document2]
 DocumentPath=CON_MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -71,7 +56,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GDQPSKCJ
 
-[Document3]
+[Document2]
 DocumentPath=ADC_IN.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,8 +73,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YTYIDVOL
 
-[Document4]
-DocumentPath=PCB1.PcbDoc
+[Document3]
+DocumentPath=PCB2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -105,8 +90,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VYFLCDWD
 
-[Document5]
-DocumentPath=PCB2.PcbDoc
+[Document4]
+DocumentPath=PCB1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -120,24 +105,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JRDTMTSE
-
-[Document6]
-DocumentPath=project.SCHLIB
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PXVHTKPY
+DocumentUniqueId=BDWFWIXV
 
 [SearchPath1]
 Path=..\..\AD20\Library\*.*
@@ -258,12 +226,42 @@ OutputName20=WireList Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
+OutputType21=SIMetrixNetlist
+OutputName21=SIMetrix
+OutputDocumentPath21=
+OutputVariantName21=
+OutputDefault21=0
+OutputType22=SIMPLISNetlist
+OutputName22=SIMPLIS
+OutputDocumentPath22=
+OutputVariantName22=
+OutputDefault22=0
+OutputType23=XSpiceNetlist
+OutputName23=XSpice Netlist
+OutputDocumentPath23=
+OutputVariantName23=
+OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=3층 동관 OA실
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputType1=AdvSimNetlist
+OutputName1=Mixed Sim
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -1009,6 +1007,8 @@ MultiChannelAlternate=2
 AlternateItemFail=3
 Type122=2
 Type123=1
+Type124=1
+Type125=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -1051,10 +1051,16 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=project.SCHLIB
+ComponentDesignItemID0=CMP-17877-000002-1
+ComponentSymbolReference0=CMP-17877-000002-1
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1068,6 +1074,75 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Automotive
+ParameterUpdate0=1
+ParameterName1=Category
+ParameterUpdate1=1
+ParameterName2=Comment
+ParameterUpdate2=1
+ParameterName3=Component Kind
+ParameterUpdate3=1
+ParameterName4=ComponentLink2Description
+ParameterUpdate4=1
+ParameterName5=ComponentLink2URL
+ParameterUpdate5=1
+ParameterName6=Contact Resistance
+ParameterUpdate6=1
+ParameterName7=Current Rating
+ParameterUpdate7=1
+ParameterName8=Description
+ParameterUpdate8=1
+ParameterName9=Device Class L1
+ParameterUpdate9=1
+ParameterName10=Device Class L2
+ParameterUpdate10=1
+ParameterName11=Device Class L3
+ParameterUpdate11=1
+ParameterName12=Digikey Description
+ParameterUpdate12=1
+ParameterName13=Electromechanical Life
+ParameterUpdate13=1
+ParameterName14=Footprint Url
+ParameterUpdate14=1
+ParameterName15=Height
+ParameterUpdate15=1
+ParameterName16=Lead Free
+ParameterUpdate16=1
+ParameterName17=Library Reference
+ParameterUpdate17=1
+ParameterName18=Manufacturer
+ParameterUpdate18=1
+ParameterName19=Manufacturer 1
+ParameterUpdate19=1
+ParameterName20=Manufacturer Part Number
+ParameterUpdate20=1
+ParameterName21=Manufacturer Part Number 1
+ParameterUpdate21=1
+ParameterName22=Mount
+ParameterUpdate22=1
+ParameterName23=Mouser Description
+ParameterUpdate23=1
+ParameterName24=Octopart
+ParameterUpdate24=1
+ParameterName25=Package
+ParameterUpdate25=1
+ParameterName26=RoHS
+ParameterUpdate26=1
+ParameterName27=Temperature
+ParameterUpdate27=1
+ParameterName28=Temperature Range High
+ParameterUpdate28=1
+ParameterName29=Temperature Range Low
+ParameterUpdate29=1
+ParameterName30=Throw Configuration
+ParameterUpdate30=1
+ParameterName31=Voltage Rating Dc
+ParameterUpdate31=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=OS203011MA2QP1
+ModelUpdate0=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1076,12 +1151,12 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [Comparison Options]
-ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=0|UseName=-1|InclAllRules=0
-ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
-ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|UseName=0|InclAllRules=0
+ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
