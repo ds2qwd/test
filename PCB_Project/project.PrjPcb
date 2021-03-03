@@ -105,7 +105,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BKLHTJMF
+DocumentUniqueId=CTIBKQGM
 
 [Document5]
 DocumentPath=PCB1.PcbDoc
@@ -159,6 +159,10 @@ GenerateClassCluster=0
 DocumentUniqueId=YYBPDAGK
 
 [GeneratedDocument1]
+DocumentPath=Project Outputs for project\Design Rule Check - Project.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=Project Outputs for project\Footprint Comparison - Project.html
 DItemRevisionGUID=
 
